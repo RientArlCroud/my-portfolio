@@ -1,0 +1,99 @@
+/* Paleta de colores global */
+:root {
+  --color-primary: #456990;  /* Azul lapislázuli*/
+  --color-secondary: #E5E5E5;  /* Gris claro */
+  --color-bg: #0D0D0D;  /* Fondo principal */
+  --color-surface: #1c1c1c;  /* Fondo alternativo */
+  --color-text: #FFFFFF;  /* Texto principal */
+  --color-text-muted: #B3B3B3;  /* Texto secundario */
+  /*--color-accent: #3d0b60;  /* Azul acento */
+  --color-accent: #340856;  /* Morado acento */
+  --color-gold: #D4AF37; /* Dorado */
+}
+
+/* Reset básico (para evitar estilos raros del navegador) */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aplicamos el fondo general */
+body {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Global navegation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg);
+  padding: 1rem 2rem;
+}
+
+/* Each block takes up the same space in the row*/
+.nav-left,
+.nav-center,
+.nav-right {
+  flex: 1;
+}
+
+.logo{
+  width: 12rem;
+  height: auto;
+  
+  margin: 0.5px;
+  
+}
+
+.logo text {
+  fill: var(--color-primary); /* cambia el color con tu paleta */
+}
+
+.logo:hover tspan:last-child {
+  fill: var(--color-text);
+  transition: fill 0.3s ease;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px var(--color-gold));
+}
+
+.nav-center{
+  display: flex;
+  justify-content: center;
+}
+
+/* List of option in navegation bar*/
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none; /* Remove the bullets of the link list */
+  margin: 0;
+  padding: 0;
+}
+
+.about-me{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Botons of navigation bar*/
+.nav-links a{
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  padding: 0.5rem  1rem;
+  display: inline-block; 
+}
+
+.nav-links a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-gold);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05) translateY(-3px);
+  filter: drop-shadow(0 0 5px var(--color-gold));
+}
+
