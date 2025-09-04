@@ -97,3 +97,64 @@ body {
   filter: drop-shadow(0 0 5px var(--color-gold));
 }
 
+.div1 {
+  display: flex;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+  border: 2px solid var(--color-bg);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.hero-image {
+  width: 50%;
+  text-align: center;
+}
+
+.hero-text {
+  width: 50%;
+  text-align: center;
+}
+
+.hero-section-button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  margin: 10px;
+}
+
+.posts-section {
+  align-items: center;
+  margin: 20px 20px;
+  border: 2px solid var(--color-bg);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.div2 {
+  display: flex;
+}
+
+.about-section {
+  align-items: center;
+  margin: 10px 20px;
+  border: 2px solid var(--color-bg);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.projects-section {
+  align-items: center;
+  margin: 10px 20px;
+  border: 2px solid var(--color-bg);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+}
